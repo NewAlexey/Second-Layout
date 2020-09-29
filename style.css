@@ -1,13 +1,24 @@
 @font-face {
-  font-family: myriadpro;
-  src: url(fonts/MyriadPro.ttf);
+  font-family: "Myriad Pro";
+  src: url(fonts/MyriadPro4.woff);
 }
+
+@font-face {
+  font-family: "Arial MT";
+  src: url(fonts/ArialMT2.woff);  
+}
+
 .font-fam {
-  font-family: myriadpro;
+  font-family: "Myriad Pro";
+}
+
+.font-fam-arial {
+  font-family: "Arial MT";
 }
 
 body {
   background-color:whitesmoke;
+  margin: 0;
 }
 .container {
   width: 960px;
@@ -33,9 +44,7 @@ body {
 }
 
 header {
-  display: flex;
   background-color: #333333;
-  color:white;
   margin:0;
   height: 133px;
 }
@@ -52,6 +61,8 @@ h2 {
   color:#bbbbbb;
   margin:0;
   font-size: 50px;
+  font-weight: 400;
+  letter-spacing: -2px;
 }
 
 h3 {
@@ -82,6 +93,7 @@ h4 {
 
 .topa {
   line-height: 155px;
+  width: 411px;
 }
 
 .topa a {
@@ -97,6 +109,17 @@ h4 {
 .ahome {
   display: inline;
 }
+
+.ahome::after {
+  padding: 0 6px;
+  content: "--";
+  color: white;
+}
+
+.ahome2 {
+  display: inline;
+}
+
 .div-text {
   font-weight: 400;
   font-size: 31px;
@@ -131,6 +154,7 @@ h4 {
 }
 
 .text2 {
+  cursor: pointer;
   text-align: center;
   text-transform: uppercase;
   background-color: #0076a3;
@@ -151,7 +175,7 @@ h4 {
 }
 
 .shadow {
-  box-shadow: 5px 5px 5px;
+  box-shadow: 5px 5px 5px #c7c7c7;
 }
 
 .bot-text{
